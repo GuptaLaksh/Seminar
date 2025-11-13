@@ -1,0 +1,515 @@
+\documentclass[11pt]{beamer}
+% \usetheme{Boadilla}
+\usepackage{transparent}
+\usepackage{tikz}
+% \usetheme{Goettingen}
+% \usetheme{Boadilla}
+% \usetheme{Boadilla}
+
+% \usetheme{default}
+% \usecolortheme{default}
+% \usetheme{AnnArbor} 
+% \usecolortheme{beaver}
+\setbeamertemplate{footline}[frame number] 
+% \setbeamertemplate{page number in head/foot}[totalframenumber]
+% \setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{navigation symbols}{} 
+
+\usepackage{qrcode}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+
+% Hyperref Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=deeppink,
+    citecolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+}
+
+\DeclareMathOperator{\argmin}{argmin}
+\newcommand{\angstrom}{\text{\normalfont\AA}}
+
+\definecolor{deeppink}{rgb}{1, 0.07, 0.57}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
+
+\author[Laksh Gupta]{\small{{\it SDSS-V LVM: Detectability of Wolf-Rayet stars and their He II ionizing flux in low-metallicity environments \\
+I. The weak-lined, early-type WN3 stars in the SMC} \\ \vspace{0.3cm} {González-Torà et al. 2025, arXiv: \href{https://arxiv.org/abs/2509.04569}{2509.04569}}} \\ \vspace{0.5cm} \large{\bf {{Laksh Gupta}}}}
+\title[WRs in SMC]{Presentation for {\it Seminar on Astrophysics}}
+\institute[]{Supervisor: \textbf{Dr.~Abel Schootemeijer} (AIfA, University of Bonn)}
+
+\vspace{0.2cm}
+
+% Supervisor: \textbf{Abel Schootemeijer} (AIfA, University of Bonn); 
+% \\ Collaborator: \textbf{Annalisa Calamida} (Space Telescope Science Institute)}
+\date{8th December 2025}
+
+%Global Background must be put in preamble
+% \usebackgroundtemplate%
+% {%
+%     \transparent{0.3}\includegraphics[width=\paperwidth,height=\paperheight]{He-coreWD.png}%
+% }
+
+% https://esawebb.org/images/weic2307d/
+
+\begin{document}
+\begin{sloppypar}
+
+\setbeamertemplate{background}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[opacity=0.3] at (current page.center) 
+            {\includegraphics[width=0.8\paperwidth]{WR_star.png}};
+    \end{tikzpicture}
+}
+
+\begin{frame}[noframenumbering]
+    \titlepage
+\end{frame}
+
+\setbeamertemplate{background}{}
+
+% \begin{frame}{Outline of the presentation}
+
+% \begin{itemize}
+%     \item Wolf-Rayet Stars
+%     \item Small Magellanic Cloud
+%     \item Motivation for this study
+%     \item Methodology
+%     \item Result
+%     % \item Canonical Stellar Evolutionary Theory
+%     % \item Types of White Dwarfs (relevant to this study)
+%     % \item Choice of astrophysical laboratory
+%     % \item Data
+%     % \item Methodology
+%     % \item Results
+% \end{itemize}
+
+% \end{frame}
+
+\begin{frame}{Sun as a Star}
+
+A few more billions of years until our Sun runs out of fuel. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{SunAsAStar.png}
+    % \label{fig:enter-label}
+\end{figure}
+
+\tiny{Lifecycle of our Sun. Credits: NASA Science Space Place/JPL.}
+
+\end{frame}
+
+\begin{frame}{Massive Stars}
+
+% \begin{columns}
+%     \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item $M_{\text{initial}} > 8M_\odot$. 
+            \item $T_{\text{effective}} \gtrsim 10$ kK. 
+            \item Radiation from these stars peaks in UV and is strong enough to ionize the surrounding interstellar medium\textemdash~H I ($\lambda < 912 \angstrom$), He I ($\lambda < 504 \angstrom$), {\bf He II} ($\lambda < 228 \angstrom$). 
+            \item Hence, one expects to see these emission features from the spectra of massive stars. 
+        \end{itemize}
+
+$Q_{{\text{He II}}}$ is defined as the ionizing flux of He II. 
+
+%     \end{column}
+
+%     \begin{column}{0.5\textwidth}
+%         \begin{figure}[!ht]
+%          \centering
+%          \includegraphics[width=1\linewidth]{WR_star.png}
+%         \end{figure}
+%         \tiny{WR 124 is a Wolf-Rayet star in Sagittarius. Credits: Yves Grosdidier, Anthony Moffat, and NASA.}
+%     \end{column}
+% \end{columns}
+
+\end{frame}
+
+\begin{frame}{Do all massive stars contribute equally to $Q_{{\text{He II}}}$?}
+
+% explain this. 
+% thin winds? 
+% WR in SF connection. 
+
+\begin{columns}
+    \begin{column}{1\textwidth}
+        {\bf No}. 
+        Only stars with 
+        \begin{enumerate}
+            \item hot temperatures, 
+            \item thin stellar winds, and
+            \item strong dependence on metallicity (low).
+        \end{enumerate}
+        contribute to $Q_{\text{He II}}$. \\
+        \vspace{0.4cm}
+        Hence, massive stars with thin winds in low-metallicity environments contribute to $Q_{\text{He II}}$. \\
+        \vspace{0.4cm}
+        Six such stars are present in Milky Way's satelite galaxy {\bf Small Magellanic Clouds}. All six of them are {\bf Wolf-Rayet Stars}. 
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Wolf-Rayet Stars}
+
+% WR Stars - properties, nebular He II recombination emission, relation with high metallicity environment
+% SMC - known WRs, even though SMC has low-metallicity, they emit strong He II ionizing flux - this is due to weak winds. 
+
+% 4600 pc, Sagittarius, filter, instrument, year of picture, nebula?
+% Spectral class?
+% Stellar Evolution? 
+% what does this $\lambda$ mean? - Hot stars emit most of thier radiation in UV. These UV photons have might have more or equal energy to knock out the electrons from surround atoms and hence ionizing them. For example, to knock out the tighest bound electron from He, it takes 54.4 eV which corresponds to 228 Angstrom. 
+% introduce WR abbreviation. 
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item First discovered by C. J. E. Wolf and G. Rayet while working at the Paris Observatory in 1867. 
+            \item Hot ($T_{\text{effective}} \gtrsim 25$ kK) and Massive ($M_* \gtrsim 25 M_\odot$).
+            % \item Produce - H I ($\lambda < 912 \angstrom$), He I ($\lambda < 504 \angstrom$), He II ($\lambda < 228 \angstrom$) spectrum features by ionizing the interstellar medium. 
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[!ht]
+         \centering
+         \includegraphics[width=1\linewidth]{WR_star.png}
+        \end{figure}
+        \tiny{WR 124 is a Wolf-Rayet star in Sagittarius. Credits: Yves Grosdidier, Anthony Moffat, and NASA.}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+% \begin{frame}
+%     Early-type Wolf-Rayet stars with Nitrogen lines dominated spectra of ``degree of ionization'' 3 - WNE3. 
+% \end{frame}
+
+\begin{frame}{Small Magellanic Cloud (SMC)}
+
+% SMC history.
+
+% The Small Magellanic Cloud (SMC) galaxy is a striking feature of the southern sky even to the unaided eye. But visible-light telescopes cannot get a really clear view of what is in the galaxy because of obscuring clouds of interstellar dust. VISTA’s infrared capabilities have now allowed astronomers to see the myriad of stars in this neighbouring galaxy much more clearly than ever before. The result is this record-breaking image — the biggest infrared image ever taken of the Small Magellanic Cloud — with the whole frame filled with millions of stars.
+
+% As well as the SMC itself this very wide-field image reveals many background galaxies and several star clusters, including the very bright 47 Tucanae globular cluster at the right of the picture.
+
+% why these 6? - 80-100 kK - hottest or early-type WN3h with weak winds - check.
+% nearby - hence less reddening. 
+% nebular emission makes the dilution worse ?
+% AB 7 is a binary.
+% AB 6 is a high order multiple system - does not produce QHeII.
+% SMC - introduce abbreviation. 
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            % \item 
+            \item {\bf Nearby} galaxy which hosts a {\bf significant population} of resolvable {\bf hot}, {\bf massive} stars and is metal poor\footnote{$\approx 0.2 Z_\odot$.}. 
+            \item 12 WRs are known in SMC, this study deals with 6 of them. 
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[!ht]
+         \centering
+         \includegraphics[width=1\linewidth]{SMC.png}
+        \end{figure}
+        \tiny{SMC in infrared wavelength. Credits: ESO/VISTA VMC.}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{WRs contribute to the ionizing flux of He II ($Q_{{\text{He II}}}$)}
+
+\begin{columns}
+    \begin{column}{1\textwidth}
+        % $Q_{\text{He II}}$ requires: 
+        % \begin{enumerate}
+        %     \item hot temperatures, 
+        %     \item thin stellar winds, and
+        %     \item strong dependence on metallicity (low preferred).
+        % \end{enumerate}
+        \begin{center}
+            % $\Downarrow$ \\
+            Massive stars with thin winds in low-metallicity environments contribute to $Q_{\text{He II}}$ - {\bf theoretical prediction}. \\
+            % $\Downarrow$ \\
+            % WR Stars with thin winds in low-metallicity environments are significant contributors of $Q_{\text{He II}}$. Hence, in theory, we must expect a feature corresponding to this in the spectra of star forming regions. \\
+            $\Downarrow$ \\
+            Observations {\bf do not match this prediction}, i.e., the integrated light spectra\footnote{ILS.} of low-metallicity galaxies\footnote{typically star-forming} does not show the feature associated to $Q_{\text{He II}}$. \\
+            This study {\bf explains this discrepancy}. \\
+            % The feature associated to this line does not show up in the integrated light spectra\footnote{ILS.} of star-forming galaxies
+        \end{center}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{}
+
+% SMC would be a good candidate to study these stars since we can resolve them. 
+% The background image shows the O III nebular emission from MCELS. 
+% AB#
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{allSMC.png} 
+    % Fig A1
+\end{figure}
+
+\begin{center}
+    \tiny{The six WR stars analyzed in this study.}
+\end{center}
+
+\end{frame}
+
+% \begin{frame}{Resolved vs. Unresolved Stellar Populations}
+
+% \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%         \begin{figure}[!ht]
+%          \centering
+%          \includegraphics[width=1\linewidth]{NGC2808NASA.jpg}
+%         \end{figure}
+%     \end{column}
+
+%     \begin{column}{0.5\textwidth}
+%         \begin{figure}[!ht]
+%          \centering
+%          \includegraphics[width=1\linewidth]{M31GC.png}
+%         \end{figure}
+%     \end{column}
+% \end{columns}
+% \vspace{0.1cm}
+% {\small Left: NGC~2808, a Globular Cluster in our Galaxy; Right: Globular Cluster System of Andromeda Galaxy. \\ For unresolved systems, the integrated light spectra is used as a proxy for finding the number of stars.}
+
+% light 
+% 
+
+% is this right?
+
+% \end{frame}
+
+% \begin{frame}
+%     But, when one uses these relations for star-forming\footnote{SF} galaxies, no WR stars are found. Why? 
+% \end{frame}
+
+% \begin{frame}{Aim of the study}
+%     But, when one uses these relations for SF galaxies, no WR stars are found. Why? \\ 
+%     Aim of this study is to explain this.
+% \end{frame}
+
+% strongest WR bumps are not at low metallicity. 
+
+% \begin{frame}{Instrument}
+% \end{frame}
+
+\begin{frame}{Observations}
+
+% The Local Volume Mapper (LVM) is an optical, integral-field spectroscopic survey that will target the Milky Way, Small and Large Magellanic Clouds, and other Local Volume galaxies. LVM will make use of new telescopes and newly built spectrographs that cover a wavelength range of 3600-10000 Å, with spectral resolution R~4000 (based on the DESI spectrograph design). This new LVM instrument will collect roughly 20 million contiguous spectra over 2,500 square degrees of sky, including the midplane of the Milky Way, Orion, and the Magellanic Clouds from Las Campanas Observatory, Chile in SDSS-V. Funding allowing, we plan to include the Northern Milky Way as well as M31 and M33.
+% • Target area ≈ 2,500 deg² covering the Galactic plane, the Large and Small Magellanic Clouds, and selected nearby galaxies (CONFIRM)
+% • Spatial resolution < 1 pc in the Milky Way, ≈ 10 pc in the Magellanic Clouds
+% • Wavelength range 360 – 980 nm, split into three spectrograph channels
+% • Planned spectra > 55 million over four years (CONFIRM)
+% • Sensitivity ~ 1 Rayleigh in H⍺
+% atmosphere not sensitive to these wavelengths. 
+
+% instrument
+% optical slit spectroscopy. 
+% explain figure - LVM - briefly how it works. 
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Data from Local Volume Mapper (LVM) was used in this study. 
+            \item Integrated spectra from apertures with 40$''$, 80$''$, 160$''$, 320$''$, and 600$''$ diameter.
+            \item For stellar spectra  - optical slit spectroscopy (He II $4686 \angstrom$) was used. 
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[!ht]
+         \centering
+         \includegraphics[width=1\linewidth]{LVM.png}
+        \end{figure}
+        \tiny{The Local Volume Instrument on Robot Ridge at Las Campanas. Credits: SDSS}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{What ways did the authors analyze the spectra?}
+
+% I will go through each of them one at a time. 
+
+\begin{enumerate}
+    \item Obtain WR star number count from the spectra. 
+    \item Compared $Q_{\text{He II}}$ values from theoretical predictions to observations. 
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Analysis - Part I}
+
+% % blending is an issue in unresolved populations.
+% Spectra for AB1. Upper panel: normalized flux in blue for the data of the star black for the smallest fiber aperture of LVM (40''), lighter gray for wider apertures. Lower panel: calibrated flux for the nebular region, black for the smallest fiber aperture of LVM (40''), lighter gray for wider apertures. In light blue - the regions selected of the He ii that contribute to the nebular component.
+% inference from upper:
+% (black) emission lines dilute quickly with increasing aperture size. 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{part1.png}
+\end{figure}
+\tiny{Normalized stellar flux in blue. Black curve for the 40'' aperture, lighter gray for wider apertures.} \\
+{\bf \textcolor{deeppink}{{\large Normalization dilutes the feature!}}}
+
+\end{frame}
+
+\begin{frame}{Analysis - Part I}
+
+% Since WR stars are massive they grow very fast and die quickly. Hence, the ILS of a star-forming region will show WR features. This is the so-called - WR bump. 
+% read about other bumps. 
+% other methods of estimation. 
+% unresolved. 
+% MANGA point.
+% expected unity since 1 star? 
+
+\begin{columns}
+    \begin{column}{0.4\textwidth}
+        \begin{itemize}
+            \item The integrated light spectra (ILS) of a star-forming region will show WR features\textemdash~{\bf WR bump}. 
+            \item Strength of WR bumps is a method to estimate the number of WRs in an unresolved region or galaxy (Crowther et al. 2023). 
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+        \begin{figure}[!ht]
+            \centering
+            \includegraphics[width=1\linewidth]{E1.png}
+        \end{figure}
+        \tiny{y-axis: ``observed number of stars'', x-axis: aperture size.} \\
+        \vspace{0.2cm}
+        {\small \textcolor{deeppink}{{\bf Result 1}: The broad emission of any SMC WN3 star is completely diluted (i.e., undetectable) if the flux is integrated over a region with a diameter $> 24$ pc.} }
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Analysis - Part II}
+
+% this fig gives L_HeII?
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{part2.png}
+\end{figure}
+\tiny{Calibrated flux for the nebular region.  Black curve for 40'' aperture, lighter gray for wider apertures. Light blue regions selected of the HeII that contribute to the nebular component.} 
+% \\
+% {\bf \textcolor{deeppink}{{\large Normalization dilutes the feature!}}}
+
+\end{frame}
+
+\begin{frame}{Analysis - Part II}
+
+\begin{itemize}
+    \item Since, $Q_{\text{He II}} \propto L_{\text{He II}}$, we have $Q_{\text{He II}}$ or more precisely, $Q_{\text{He II}}^{\text{Observed}}$. 
+    \item For theoretical $Q_{\text{He II}}$, PoWR was used. They gave $Q_{\text{He II}}^{\text{Theoretical}}$. 
+    \item On comparing, $Q_{\text{He II}}^{\text{Observed}} < Q_{\text{He II}}^{\text{Theoretical}}$.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textcolor{deeppink}{{\bf Result 2}: This means that a significant number of ionizing photons from the WN3 targets escape from the immediate environment.}
+    
+\end{frame}
+
+\begin{frame}{Takeways}
+
+\begin{itemize}
+    \item {\bf Result 1}: The broad emission of any SMC WN3 star is completely diluted (i.e., undetectable) if the flux is integrated over a region with a diameter $> 24$ pc.
+    \item {\bf Result 2}: A significant number of ionizing photons from the WN3 targets escape from the immediate environment.
+\end{itemize}
+
+WN stars with comparably thin winds are easy to ``hide'', even when they are significantly away from larger clusters, despite their strong contribution of He II ionizing photons. This {\bf solves} the posed discrepancy. 
+
+% What does this finding mean star-forming galaxies?
+
+% Therefore, the discrepancy this paper claims to solve is acheived by arguing that in the integrated light spectra of star-forming galaxies, the WR feature is diluted. 
+
+\end{frame}
+
+\begin{frame}{How do these results affect current science?}
+
+\begin{itemize}
+    \item Stellar-evolution and population-synthesis models that include WR stars must be updated with this new insight.
+    \item Caution when interpreting the lack of WR bumps as meaning ``no WR stars'' in star-forming galaxies.
+\end{itemize}
+
+\end{frame}
+
+% \begin{frame}{Data}
+
+% \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%         \begin{itemize}
+%             \item Photometric data from the \textbf{H}ubble Space Telescope \textbf{U}ltraviolet \textbf{G}lobular Cluster \textbf{S}urvey (HUGS) data available on Milkuski Archive (Piotto et al. 2015; Nardiello et al. 2018).
+%             \item We chose photometric data from F275W and F336W filter systems out of the five available. 
+%             \item We only put a probability membership cut to select MSTO but none for WDs. 
+%             % \item Two fields have been studied, namely\textemdash internal field and external field. 
+%         \end{itemize}
+%     \end{column}
+
+%     \begin{column}{0.5\textwidth}
+%         % \begin{figure}[!ht]
+%         %  \centering
+%         %  \includegraphics[width=1\linewidth]{SpatialPlot2808.png}
+%         %  \caption{\tiny{Spatial Plot of NGC~2808. Upper-left field of view is the ``internal field" (black dots) and the lower-right is the field of view of the ``external field" (red dots) of the cluster.}}
+%         %  % \label{fig:enter-label}
+%         % \end{figure}
+%     \end{column}
+% \end{columns}
+% \end{frame}
+
+\begin{frame}[noframenumbering]{}
+
+\begin{center}
+    Thank you. \\
+    I thank Dr. Abel Schootemeijer for guiding me in understanding this work better. 
+\end{center}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{questions.png}
+\end{figure}
+
+\begin{center}
+    Scan to download this presentation \qrcode{https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode?lang=en}
+\end{center}
+
+% \begin{center}
+%     Questions.
+% \end{center}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{}
+    
+\end{frame}
+
+\end{sloppypar}
+\end{document}
+
+% \begin{figure}[!ht]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{}
+%   \caption{}
+% \end{figure}
