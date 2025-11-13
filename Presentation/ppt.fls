@@ -1,8 +1,8 @@
-PWD /Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation
+PWD /Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation/ppt.tex
+INPUT /Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation/ppt.tex
 OUTPUT ppt.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls

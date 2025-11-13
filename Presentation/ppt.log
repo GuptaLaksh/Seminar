@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.26)  13 NOV 2025 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.26)  13 NOV 2025 01:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation/ppt.tex"
-(/Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation/ppt.tex
+**/Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation/ppt.tex
+(/Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation/ppt.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
@@ -659,7 +659,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count366
 \l__pdf_internal_box=\box81
-) (./ppt.aux <Reading QR code for "https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode?lang=en" at level 5-M from aux file.>
+) (./ppt.aux <Reading QR code for "https://github.com/GuptaLaksh/Seminar/blob/main/Presentation/ppt.pdf" at level 5-M from aux file.>
 )
 \openout1 = `ppt.aux'.
 
@@ -914,8 +914,8 @@ Package pdftex.def Info: questions.png  used on input line 502.
 (pdftex.def)             Requested size: 307.28987pt x 142.558pt.
  
 
-<QR code requested for "https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode?lang=en" in version 0-M.>
-<Copying the QR code for "https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode?lang=en" in version 5-M as previously calculated.>
+<QR code requested for "https://github.com/GuptaLaksh/Seminar/blob/main/Presentation/ppt.pdf" in version 0-M.>
+<Copying the QR code for "https://github.com/GuptaLaksh/Seminar/blob/main/Presentation/ppt.pdf" in version 5-M as previously calculated.>
 [18
 
  <./questions.png>] [19
@@ -930,21 +930,21 @@ Package pdftex.def Info: questions.png  used on input line 502.
 \tf@snm=\write8
 \openout8 = `ppt.snm'.
 
- (./ppt.aux <Reading QR code for "https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode?lang=en" at level 5-M from aux file.>
+ (./ppt.aux <Reading QR code for "https://github.com/GuptaLaksh/Seminar/blob/main/Presentation/ppt.pdf" at level 5-M from aux file.>
 )
 Package rerunfilecheck Info: File `ppt.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  26634 strings out of 476025
- 524672 string characters out of 5790017
+ 524667 string characters out of 5790017
  1942388 words of memory out of 5000000
  46516 multiletter control sequences out of 15000+600000
  529628 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,1658b,987s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,13n,122p,1655b,987s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ppt.pdf (19 pages, 13903191 bytes).
+Output written on ppt.pdf (19 pages, 13903226 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  153 compressed objects within 2 object streams

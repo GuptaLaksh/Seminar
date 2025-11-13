@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1762993414 "/Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation/ppt.tex" "ppt.pdf" "ppt" 1762993420 0
-  "/Users/lakshgupta/Downloads/Personal/MS Astrophysics/Seminar/Presentation/ppt.tex" 1762993411 19679 13a5e93db79ed8a7e4f87d463059baf6 ""
+["pdflatex"] 1762994009 "/Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation/ppt.tex" "ppt.pdf" "ppt" 1762994016 0
+  "/Users/lakshgupta/Downloads/Personal/MSAstrophysics/Seminar/Presentation/ppt.tex" 1762994009 19709 a169553a382a31685faaaf4723d2709b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -242,10 +242,10 @@
   "allSMC.png" 1762888733 3712805 d66135d4178fb889c95dccced7cb8ae6 ""
   "part1.png" 1762884709 107957 231c5c5ddc2711969041b4276ad07def ""
   "part2.png" 1762884671 115521 d554eaf40c6f0f08841d62308e774010 ""
-  "ppt.aux" 1762993420 4998 c0b7341ea862c323bd82460064b7c9b9 "pdflatex"
-  "ppt.nav" 1762993420 1946 5f215d8357bf962dfa3279aa2a86554b "pdflatex"
-  "ppt.out" 1762993415 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "ppt.tex" 1762993411 19679 13a5e93db79ed8a7e4f87d463059baf6 ""
+  "ppt.aux" 1762994015 4998 77242c60477a9ce99707a2913b95a1e4 "pdflatex"
+  "ppt.nav" 1762994015 1946 5f215d8357bf962dfa3279aa2a86554b "pdflatex"
+  "ppt.out" 1762994010 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "ppt.tex" 1762994009 19709 a169553a382a31685faaaf4723d2709b ""
   "questions.png" 1762938006 536368 40d672aa1322cb3f185ccb0d5787bb5a ""
   (generated)
   "ppt.aux"
